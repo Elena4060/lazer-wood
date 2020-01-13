@@ -4,7 +4,7 @@
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 1270px;
   margin: auto;
 }
 
@@ -124,21 +124,37 @@ body {
 }
 
 .hero {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   background: #f1f1f1 url("../img/hero/hero-bg-1.jpg") center;
   background-size: cover;
-  padding-top: 220px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  height: 100vh;
+  padding-top: 130px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
   padding-bottom: 620px;
   color: #442404;
+  font-size: 1.5em;
+  text-shadow: #fff 0.5px 0.5px 0, #fff -0.5px -0.5px 0, #000 -0.5px 0.5px 0, #000 0.5px -0.5px 0;
+}
+
+.hero__title {
   line-height: 2;
-  font-size: 2em;
-  text-align: right;
   letter-spacing: 0.1em;
+  padding-right: 10vw;
+  text-align: right;
   font-family: 'Ekaterina Velikaya One Regular', sans-serif;
+}
+
+.hero__subtitle {
+  padding-top: 5vh;
+  color: #422202;
+  text-align: right;
+  padding-right: 15vw;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
+.hero__subtitle .list {
+  direction: rtl;
 }
 /*# sourceMappingURL=style.css.map */
