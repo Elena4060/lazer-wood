@@ -24,17 +24,25 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Ekaterina Velikaya One Regular';
+  src: url("../fonts/EkaterinaVelikayaOne.eot");
+  src: url("../fonts/EkaterinaVelikayaOne.eot?#iefix") format("embedded-opentype"), url("../fonts/EkaterinaVelikayaOne.woff") format("woff"), url("../fonts/EkaterinaVelikayaOne.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-family: 'Proxima Nova Light', sans-serif;
-  color: #252525;
+  color: #422202;
 }
 
 .button-o {
-  border: 2px solid #507fe1;
+  border: 2px solid #9D8368;
   padding: 17px 22px;
   font-size: 12px;
   font-family: 'Proxima Nova Semibold', sans-serif;
-  color: #507fe1;
+  color: #9D8368;
   text-transform: uppercase;
 }
 
@@ -61,7 +69,7 @@ body {
   font-size: 19px;
   font-family: 'Proxima Nova Semibold', sans-serif;
   text-decoration: none;
-  color: #252525;
+  color: #422202;
 }
 
 .navbar__small-text {
@@ -89,15 +97,15 @@ body {
           justify-content: center;
   background-color: transparent;
   border: none;
-  border-right: 1px solid rgba(81, 11, 186, 0.1);
-  border-left: 1px solid rgba(81, 11, 186, 0.1);
+  border-right: 1px solid rgba(135, 108, 82, 0.1);
+  border-left: 1px solid rgba(135, 108, 82, 0.1);
 }
 
 .menu-button__line {
   display: block;
   width: 20px;
   height: 3px;
-  background-color: #89a9eb;
+  background-color: #9D8368;
   margin: 2px 0;
 }
 
@@ -113,5 +121,24 @@ body {
   display: block;
   font-size: 14px;
   color: #7b7b79;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #f1f1f1 url("../img/hero/hero-bg-1.jpg") center;
+  background-size: cover;
+  padding-top: 220px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 620px;
+  color: #442404;
+  line-height: 2;
+  font-size: 2em;
+  text-align: right;
+  letter-spacing: 0.1em;
+  font-family: 'Ekaterina Velikaya One Regular', sans-serif;
 }
 /*# sourceMappingURL=style.css.map */

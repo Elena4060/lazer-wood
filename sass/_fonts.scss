@@ -18,9 +18,24 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'Ekaterina Velikaya One Regular';
+	src: url('../fonts/EkaterinaVelikayaOne.eot');
+	src: url('../fonts/EkaterinaVelikayaOne.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/EkaterinaVelikayaOne.woff') format('woff'),
+		url('../fonts/EkaterinaVelikayaOne.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
 @mixin bold {
 	font-family: 'Proxima Nova Semibold', sans-serif ;
 }
 @mixin light {
 	font-family: 'Proxima Nova Light', sans-serif;
 }
+
+@mixin light-1 {
+	font-family: 'Ekaterina Velikaya One Regular', sans-serif;
+}
+
