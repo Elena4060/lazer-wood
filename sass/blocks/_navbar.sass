@@ -1,4 +1,9 @@
 .navbar
+	position: fixed
+	left: 0
+	top: 0
+	width: 100%
+	background-color: #fff
 	&-wrap
 		display: flex
 		align-items: center
@@ -19,6 +24,26 @@
 		color: $text-color-light 
 		text-decoration: none
 .menu
+	position: fixed
+	z-index: 0
+	top: 80px
+	padding: 16px 0
+	left: 0
+	width: 100%
+	background-color: $primary	
+	transition: 0.5s
+	transform: translateY(-100%)
+	&_active
+		transform: translateY(0)
+	&__nav
+		display: flex
+		align-items: center
+		justify-content: space-around
+	&__link
+		text-decoration: none
+		font-size: 17px
+		text-transform: uppercase
+		color: #ffffff
 	&-button
 		height: 80px
 		width: 70px
@@ -29,9 +54,8 @@
 		background-color: transparent
 		border: none
 		border-right: 1px solid rgba(#876c52, 0.1 )
-		border-left: 1px solid rgba(#876c52, 0.1 )
-		
-		&__line
+		border-left: 1px solid rgba(#876c52, 0.1 )		
+	 &__line
 			display: block
 			width: 20px
 			height: 3px

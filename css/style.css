@@ -38,12 +38,32 @@ body {
 }
 
 .button-o {
+  cursor: pointer;
   border: 2px solid #9D8368;
   padding: 17px 22px;
   font-size: 12px;
   font-family: 'Proxima Nova Semibold', sans-serif;
   color: #9D8368;
   text-transform: uppercase;
+}
+
+.button {
+  cursor: pointer;
+  border: none;
+  background-color: #9D8368;
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 25px 45px;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
 }
 
 .navbar-wrap {
@@ -77,6 +97,43 @@ body {
   font-size: 14px;
   color: #7b7b79;
   text-decoration: none;
+}
+
+.menu {
+  position: fixed;
+  z-index: 0;
+  top: 80px;
+  padding: 16px 0;
+  left: 0;
+  width: 100%;
+  background-color: #9D8368;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.menu_active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.menu__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.menu__link {
+  text-decoration: none;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 .menu-button {
@@ -125,14 +182,13 @@ body {
 
 .hero {
   display: block;
-  background: #f1f1f1 url("../img/hero/hero-bg-1.jpg") center;
+  background: #f1f1f1 url("../img/hero/hero-bg-1.jpg") no-repeat center top 80px;
   background-size: cover;
-  height: 100vh;
-  padding-top: 130px;
+  padding-top: 280px;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
-  padding-bottom: 620px;
+  padding-bottom: 120px;
   color: #442404;
   font-size: 1.5em;
   text-shadow: #fff 0.5px 0.5px 0, #fff -0.5px -0.5px 0, #000 -0.5px 0.5px 0, #000 0.5px -0.5px 0;
@@ -147,7 +203,7 @@ body {
 }
 
 .hero__subtitle {
-  padding-top: 5vh;
+  line-height: 1.1;
   color: #422202;
   text-align: right;
   padding-right: 15vw;
