@@ -2,6 +2,6 @@
 	"githubPullRequests.remotes": [
 		"origin",
 		"upstream",
-		"https://github.com/Elena4060/lazer-wood.git"
+		"git@github.com:Elena4060/lazer-wood.git"
 	]
 }
