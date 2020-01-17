@@ -8,7 +8,9 @@
 	color: $primary-dark
 	font-size: 1.5em	
 	text-shadow: #fff 0.5px 0.5px 0, #fff -0.5px -0.5px 0, #000 -0.5px 0.5px 0, #000 0.5px -0.5px 0
-	&__title		
+	&__title
+		font-size: 10vh
+		font-weight: bold		
 		line-height: 2			
 		letter-spacing: 0.1em
 		padding-right: 10vw
@@ -24,6 +26,10 @@
 			direction: rtl
 	&__button		
 	  display:block
-  
+@media (max-width: 991px)
+	.hero
+		background-size: cover
+		&__title
+			font-size: 5vh
 
 		

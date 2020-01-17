@@ -215,8 +215,21 @@ body {
   .logo {
     display: none;
   }
-  .menu-button {
+  .menu {
+    top: 80px;
+  }
+  .menu-button-o {
     height: 60px;
+  }
+  .menu__nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu__link {
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 }
 
@@ -235,6 +248,8 @@ body {
 }
 
 .hero__title {
+  font-size: 10vh;
+  font-weight: bold;
   line-height: 2;
   letter-spacing: 0.1em;
   padding-right: 10vw;
@@ -252,5 +267,14 @@ body {
 
 .hero__subtitle .list {
   direction: rtl;
+}
+
+@media (max-width: 991px) {
+  .hero {
+    background-size: cover;
+  }
+  .hero__title {
+    font-size: 5vh;
+  }
 }
 /*# sourceMappingURL=style.css.map */
