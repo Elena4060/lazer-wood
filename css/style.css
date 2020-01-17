@@ -310,14 +310,14 @@ body {
 
 @media (max-width: 991px) {
   .hero {
-    padding-top: 260px;
+    padding-top: 160px;
     background-size: cover;
   }
   .hero__title {
     font-size: 5vh;
   }
   .hero__subtitle {
-    margin-top: 120px;
+    margin-top: 180px;
   }
 }
 
