@@ -237,11 +237,11 @@ body {
 
 .hero {
   display: block;
-  background: #f1f1f1 url("../img/hero/hero-bg-1.jpg") no-repeat center top 80px;
+  background: #f1f1f1 url("../img/hero/hero-bg-1.jpg") no-repeat center top;
   background-size: cover;
   padding-top: 300px;
   padding-bottom: 120px;
-  margin-top: 0px;
+  margin-top: 80px;
   color: #442404;
   -webkit-box-align: end;
       -ms-flex-align: end;
