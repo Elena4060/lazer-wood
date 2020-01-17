@@ -136,11 +136,13 @@ body {
   transition: 0.5s;
   -webkit-transform: translateY(-200%);
           transform: translateY(-200%);
+  opacity: 0;
 }
 
 .menu_active {
   -webkit-transform: translateY(0);
           transform: translateY(0);
+  opacity: 1;
 }
 
 .menu__nav {
@@ -237,32 +239,33 @@ body {
   display: block;
   background: #f1f1f1 url("../img/hero/hero-bg-1.jpg") no-repeat center top 80px;
   background-size: cover;
-  padding-top: 280px;
+  padding-top: 300px;
+  padding-bottom: 120px;
+  margin-top: 0px;
+  color: #442404;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
-  padding-bottom: 120px;
-  color: #442404;
   font-size: 1.5em;
   text-shadow: #fff 0.5px 0.5px 0, #fff -0.5px -0.5px 0, #000 -0.5px 0.5px 0, #000 0.5px -0.5px 0;
 }
 
 .hero__title {
-  font-size: 10vh;
+  font-size: 8vh;
   font-weight: bold;
   line-height: 2;
   letter-spacing: 0.1em;
-  padding-right: 10vw;
+  padding-right: 8vw;
   text-align: right;
   font-family: 'Ekaterina Velikaya One Regular', sans-serif;
 }
 
 .hero__subtitle {
   line-height: 1.1;
-  margin-top: 120px;
+  margin-top: 30px;
   color: #422202;
   text-align: right;
-  padding-right: 15vw;
+  padding-right: 10vw;
   font-family: 'Proxima Nova Semibold', sans-serif;
 }
 
@@ -277,6 +280,9 @@ body {
   }
   .hero__title {
     font-size: 5vh;
+  }
+  .hero__subtitle {
+    margin-top: 120px;
   }
 }
 /*# sourceMappingURL=style.css.map */
