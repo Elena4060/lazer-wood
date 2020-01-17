@@ -259,6 +259,7 @@ body {
 
 .hero__subtitle {
   line-height: 1.1;
+  margin-top: 50px;
   color: #422202;
   text-align: right;
   padding-right: 15vw;
@@ -271,6 +272,7 @@ body {
 
 @media (max-width: 991px) {
   .hero {
+    padding-top: 250px;
     background-size: cover;
   }
   .hero__title {
