@@ -56,6 +56,21 @@ body {
   color: #422202;
 }
 
+.section {
+  padding: 100px 0;
+}
+
+.section-title {
+  font-size: 30px;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section__title {
+  margin-bottom: 100px;
+}
+
 .button-o {
   cursor: pointer;
   border: 2px solid #9D8368;
@@ -409,5 +424,24 @@ body {
   -ms-flex-preferred-size: 33.33%;
       flex-basis: 33.33%;
   text-align: center;
+  margin-bottom: 10px;
+}
+
+.features-block__text {
+  margin-top: -30px;
+}
+
+@media (max-width: 991px) {
+  .features-block__item {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .features-block__item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

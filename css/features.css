@@ -14,4 +14,12 @@
       flex-basis: 33.33%;
   text-align: center;
 }
+
+.features-block__text {
+  text-align: center;
+}
+
+.features-block__image {
+  height: 180px;
+}
 /*# sourceMappingURL=features.css.map */
