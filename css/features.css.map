@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACE,AAAD,eAAO,CAAC;EACP,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,aAAa;EAC9B,SAAS,EAAE,IAAI;CAGS;;AAFvB,AAAD,qBAAO,CAAC;EACP,UAAU,EAAE,MAAM;EAClB,UAAU,EAAE,MAAM;CAAG",
+    "sources": [
+        "../sass/blocks/features.sass"
+    ],
+    "names": [],
+    "file": "features.css"
+}
