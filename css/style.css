@@ -56,8 +56,12 @@ body {
   color: #422202;
 }
 
+img {
+  max-width: 100%;
+}
+
 .section {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 .section-title {
@@ -68,7 +72,7 @@ body {
 }
 
 .section__title {
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 
 .button-o {
@@ -91,6 +95,15 @@ body {
   text-transform: uppercase;
   padding: 25px 45px;
   font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
+.button-add {
+  padding: 10px;
+  text-transform: uppercase;
+  color: #442404;
+  font-size: 15px;
+  background-color: rgba(229, 217, 207, 0.9);
+  border: 1px solid #442404;
 }
 
 .bg-secondary {
@@ -131,6 +144,13 @@ body {
 @media (max-width: 576px) {
   .button-o {
     font-size: 10px;
+  }
+  .section {
+    padding: 50px 0;
+  }
+  .section__title {
+    font-size: 20px;
+    margin-bottom: 5px;
   }
 }
 
@@ -336,6 +356,10 @@ body {
   }
 }
 
+.offer {
+  padding: 50px 0;
+}
+
 .offer-block {
   background-color: #ffffff;
   -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
@@ -432,6 +456,9 @@ body {
 }
 
 @media (max-width: 991px) {
+  .features-block {
+    margin-bottom: 0;
+  }
   .features-block__item {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
@@ -439,9 +466,72 @@ body {
 }
 
 @media (max-width: 768px) {
+  .features-block {
+    margin-bottom: 0;
+  }
   .features-block__item {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+}
+
+.catalog {
+  background-color: rgba(229, 217, 207, 0.5);
+}
+
+.catalog-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.catalog__card {
+  margin-bottom: 30px;
+}
+
+.catalog-card {
+  max-width: 570px;
+  position: relative;
+  -webkit-box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
+          box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
+}
+
+.catalog-card__tag {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: rgba(229, 217, 207, 0.9);
+  border: 1px solid #442404;
+  font-size: 15px;
+  color: #442404;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.catalog-card__buttons {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.catalog-card__image {
+  display: block;
+}
+
+@media (max-width: 1169px) {
+  .catalog-block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .catalog-card {
+    max-width: 470px;
   }
 }
 /*# sourceMappingURL=style.css.map */
