@@ -604,6 +604,9 @@ img {
 
 .material {
   background-color: rgba(229, 217, 207, 0.5);
+}
+
+.material-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -612,39 +615,41 @@ img {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: #fff;
-  position: relative;
 }
 
-.material__card {
+.material-block__card {
   margin-bottom: 10px;
 }
 
-.material__text {
-  padding: 20px 0;
-  font-size: 15px;
+.material-card {
+  position: relative;
+  background-color: #fff;
 }
 
-.material__button {
+.material-card__text {
+  font-size: 15px;
+  padding: 20px;
+}
+
+.material-card__button {
   text-align: center;
   position: absolute;
   z-index: -1;
   -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
           box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
   box-shadow-width: 100%;
-  font-size: 2em;
   left: 0;
   bottom: 0;
-  height: 50px;
-  padding: 20px;
+  height: 90px;
+  padding: 5px;
 }
 
-.material:hover .material-card__button {
+.material-card:hover .material-card__button {
   z-index: 99;
-  bottom: -80px;
+  bottom: 0;
 }
 
-.material__materialtag {
+.material-card__materialtag {
   margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
