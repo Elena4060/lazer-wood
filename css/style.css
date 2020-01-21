@@ -601,4 +601,57 @@ img {
     height: auto;
   }
 }
+
+.material {
+  background-color: rgba(229, 217, 207, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #fff;
+  position: relative;
+}
+
+.material__card {
+  margin-bottom: 10px;
+}
+
+.material__text {
+  padding: 20px 0;
+  font-size: 15px;
+}
+
+.material__button {
+  text-align: center;
+  position: absolute;
+  z-index: -1;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  box-shadow-width: 100%;
+  font-size: 2em;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  padding: 20px;
+}
+
+.material:hover .material-card__button {
+  z-index: 99;
+  bottom: -80px;
+}
+
+.material__materialtag {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 24px;
+}
 /*# sourceMappingURL=style.css.map */
