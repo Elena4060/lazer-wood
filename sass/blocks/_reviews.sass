@@ -1,0 +1,36 @@
+.reviews
+	background-color: rgba($bg-secondary, 0.5)
+	&-slider
+		display: flex
+		justify-content: space-between
+		&__item
+			text-align: center
+		&__image
+			display: block
+			width: 70px
+			height: 70px
+			margin: 20px auto
+			border: 2px solid $primary
+			border-radius: 60%
+		&__text
+			position: relative
+			font-size: 15px
+			font-style: italic
+			max-width: 370px
+			padding: 20px
+			background-color: #ffffff
+			border-radius: 10px
+			margin-bottom: 40px
+			&:after
+				content: ""
+				position: absolute
+				bottom: -30px
+				left: 50%
+				transform: translateX(-50%)
+				width: 4px
+				height: 2px
+				border: 15px solid transparent
+				border-top: 15px solid #fff
+
+
+				
