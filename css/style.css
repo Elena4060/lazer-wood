@@ -860,6 +860,7 @@ img {
 }
 
 .footer__pay-logo {
+  display: inline-block;
   margin: 15px;
   font-size: 30px;
 }
@@ -871,10 +872,14 @@ img {
 }
 
 .footer__phone {
+  display: block;
   font-size: 15px;
+  margin-bottom: 15px;
 }
 
-.footer-sotial__link {
+.footer-social__link {
+  margin: 15px;
+  display: inline-block;
   font-size: 30px;
 }
 /*# sourceMappingURL=style.css.map */
