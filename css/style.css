@@ -146,15 +146,16 @@ img {
     font-size: 10px;
   }
   .section {
-    padding: 50px 0;
+    padding: 100px 0;
   }
   .section__title {
     font-size: 20px;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
   }
 }
 
 .navbar {
+  z-index: 100;
   position: fixed;
   left: 0;
   top: 0;
@@ -210,6 +211,7 @@ img {
 }
 
 .menu_active {
+  z-index: 100;
   -webkit-transform: translateY(0);
           transform: translateY(0);
   opacity: 1;
@@ -253,6 +255,14 @@ img {
   border: none;
   border-right: 1px solid rgba(135, 108, 82, 0.1);
   border-left: 1px solid rgba(135, 108, 82, 0.1);
+}
+
+.menu-button:focus {
+  outline: none;
+}
+
+.menu-button:hover {
+  cursor: pointer;
 }
 
 .menu-button__line {
@@ -487,6 +497,13 @@ img {
   background-color: rgba(229, 217, 207, 0.5);
 }
 
+.catalog-card {
+  max-width: 570px;
+  position: relative;
+  -webkit-box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
+          box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
+}
+
 .catalog-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -498,18 +515,11 @@ img {
       flex-wrap: wrap;
 }
 
-.catalog__card {
+.catalog-block__card {
   margin-bottom: 30px;
 }
 
-.catalog-card {
-  max-width: 570px;
-  position: relative;
-  -webkit-box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
-          box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
-}
-
-.catalog-card__tag {
+.catalog-block__tag {
   position: absolute;
   top: 15px;
   left: 15px;
@@ -521,14 +531,14 @@ img {
   text-transform: uppercase;
 }
 
-.catalog-card__buttons {
+.catalog-block__buttons {
   position: absolute;
   bottom: 15px;
   right: 15px;
   cursor: pointer;
 }
 
-.catalog-card__image {
+.catalog-block__image {
   display: block;
 }
 
@@ -560,13 +570,13 @@ img {
       flex-wrap: wrap;
 }
 
+.blog-list__card {
+  margin-bottom: 20px;
+}
+
 .blog-list__image {
   height: 200px;
   overflow: hidden;
-}
-
-.blog-list__card {
-  margin-bottom: 20px;
 }
 
 .blog-list__text {
@@ -812,12 +822,12 @@ img {
 }
 
 .questions__title {
-  font-size: 30px;
+  font-size: 4vh;
   font-family: 'Proxima Nova Semibold', sans-serif;
 }
 
 .questions__link {
-  font-size: 24px;
+  font-size: 3vh;
   color: #9D8368;
 }
 
@@ -900,6 +910,7 @@ img {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
+    margin-left: 0;
   }
   .footer__copy {
     text-align: center;
