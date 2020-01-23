@@ -1,8 +1,4 @@
 .blog
-	&__title
-		font-size: 24px
-		+bold
-		margin-bottom: 70px
 	&-card
 		box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1)
 	&-list
@@ -15,12 +11,18 @@
 		&__card
 			margin-bottom: 20px	
 		&__text
-			font-size: 18px
+			font-size: 3vh
 			+bold	
 			display: flex
 			justify-content: center
 			align-items: center
 			min-height: 80px
+@media (max-width: 1024px)
+ .blog
+	 &-list
+		 justify-content: center
+		 &__card
+			 margin: 20px				
 @media (max-width: 991px)
 	.blog
 		&-list

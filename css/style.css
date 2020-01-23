@@ -309,33 +309,33 @@ img {
   display: block;
   background: #f1f1f1 url("../img/hero/hero-bg-1.jpg") no-repeat center top;
   background-size: cover;
-  padding-top: 300px;
-  padding-bottom: 120px;
+  padding-top: 150px;
+  padding-bottom: 180px;
   margin-top: 80px;
   color: #442404;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
-  font-size: 1.5em;
+  font-size: 3.2vh;
   text-shadow: #fff 0.5px 0.5px 0, #fff -0.5px -0.5px 0, #000 -0.5px 0.5px 0, #000 0.5px -0.5px 0;
 }
 
 .hero__title {
-  font-size: 8vh;
+  font-size: 6vh;
   font-weight: bold;
   line-height: 2;
   letter-spacing: 0.1em;
-  padding-right: 8vw;
+  padding-right: 18vw;
   text-align: right;
   font-family: 'Ekaterina Velikaya One Regular', sans-serif;
 }
 
 .hero__subtitle {
   line-height: 1.1;
-  margin-top: 30px;
+  margin-top: 80px;
   color: #422202;
   text-align: right;
-  padding-right: 10vw;
+  padding-right: 15vw;
   font-family: 'Proxima Nova Semibold', sans-serif;
 }
 
@@ -515,7 +515,7 @@ img {
   left: 15px;
   background-color: rgba(229, 217, 207, 0.9);
   border: 1px solid #442404;
-  font-size: 15px;
+  font-size: 2,5vh;
   color: #442404;
   padding: 10px;
   text-transform: uppercase;
@@ -532,21 +532,16 @@ img {
   display: block;
 }
 
-@media (max-width: 1169px) {
+@media (max-width: 1124px) {
   .catalog-block {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .catalog-card {
-    max-width: 470px;
+  .catalog-card, .catalog__card {
+    max-width: 400px;
+    margin: 15px;
   }
-}
-
-.blog__title {
-  font-size: 24px;
-  font-family: 'Proxima Nova Semibold', sans-serif;
-  margin-bottom: 70px;
 }
 
 .blog-card {
@@ -575,7 +570,7 @@ img {
 }
 
 .blog-list__text {
-  font-size: 18px;
+  font-size: 3vh;
   font-family: 'Proxima Nova Semibold', sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -587,6 +582,17 @@ img {
       -ms-flex-align: center;
           align-items: center;
   min-height: 80px;
+}
+
+@media (max-width: 1024px) {
+  .blog-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .blog-list__card {
+    margin: 20px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -628,7 +634,7 @@ img {
 }
 
 .material-card__text {
-  font-size: 18px;
+  font-size: 3vh;
   font-family: 'Proxima Nova Semibold', sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -798,7 +804,7 @@ img {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   margin-left: 50px;
-  font-size: 20px;
+  font-size: 2.8vh;
 }
 
 .factory-block__image {
@@ -835,7 +841,7 @@ img {
 }
 
 .footer-block {
-  margin-left: 100px;
+  margin-left: 180px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -850,7 +856,7 @@ img {
 }
 
 .footer__title {
-  font-size: 18px;
+  font-size: 3vh;
   text-transform: uppercase;
   margin-bottom: 48px;
 }
@@ -862,6 +868,7 @@ img {
 .footer__pay-logo {
   display: inline-block;
   margin: 15px;
+  margin-top: 50px;
   font-size: 30px;
 }
 
@@ -873,7 +880,7 @@ img {
 
 .footer__phone {
   display: block;
-  font-size: 15px;
+  font-size: 2.5vh;
   margin-bottom: 15px;
 }
 
@@ -881,5 +888,28 @@ img {
   margin: 15px;
   display: inline-block;
   font-size: 30px;
+}
+
+@media (max-width: 768px) {
+  .footer-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .footer__copy {
+    text-align: center;
+  }
+  .footer__title {
+    margin-bottom: 20px;
+  }
+  .footer__contacts {
+    text-align: center;
+    margin-top: 30px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
