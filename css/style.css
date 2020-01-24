@@ -104,6 +104,7 @@ img {
   font-size: 15px;
   background-color: rgba(229, 217, 207, 0.9);
   border: 1px solid #442404;
+  text-decoration: none;
 }
 
 .bg-secondary {
@@ -367,7 +368,7 @@ img {
 }
 
 .offer {
-  padding: 50px 0;
+  padding: 120px 0;
 }
 
 .offer-block {
@@ -665,7 +666,7 @@ img {
   -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
           box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
   left: 0;
-  bottom: 0;
+  bottom: 0px;
   height: 120px;
   padding: 23px;
 }
@@ -675,6 +676,10 @@ img {
   bottom: 0px;
   background-color: #ffffff;
   width: 100%;
+}
+
+.material-card:hover .material-card__button a {
+  text-decoration: none;
 }
 
 .material-card__materialtag {

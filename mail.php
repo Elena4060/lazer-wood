@@ -9,18 +9,20 @@ $typeorder = $_POST['tipe_order'];
 $name = $_POST['name_user'];
 $phone = $_POST['phone_user'];
 $desctiprtion = $_POST['desctiprtion'];
+$price = $_POST['price_user'];
+
 
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'smtp.gmail.com';  																							// Specify main and backup SMTP servers
+$mail->Host = 'smtp.mail.ru';  																							// Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'mailtowooden@gmail.com'; // Ваш логин от почты с которой будут отправляться письма
+$mail->Username = 'alexalexalexpol@mail.ru'; // Ваш логин от почты с которой будут отправляться письма
 $mail->Password = 'gionr7wefklknjn'; // Ваш пароль от почты с которой будут отправляться письма
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465; // TCP port to connect to / этот порт может отличаться у других провайдеров
 
-$mail->setFrom('itelena95@gmail.com'); // от кого будет уходить письмо?
+$mail->setFrom('alexalexalexpol@mail.ru'); // от кого будет уходить письмо?
 $mail->addAddress('lazer.wooden@gmail.com');     // Кому будет уходить письмо 
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
@@ -30,8 +32,10 @@ $mail->addAddress('lazer.wooden@gmail.com');     // Кому будет уход
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = '������ � ����� Laser$Wooden';
-$mail->Body    = '' .$name . ' ������� ������.<br> ��� ����� ��������: ' .$phone. '<br> �� ���������: ' .$material. '.<br> ������: ' .$typeorder. '.<br> ��������: '.$desctiprtion ;
+$mail->Subject = 'Заявка с сайта Laser&Wooden';
+$mail->Body    = '' .$name . ' оставил заявку.<br> Его номер телефона: ' .$phone. 
+'<br> Материал: ' .$material. '.<br> Услуга: ' .$typeorder. '.<br> Описание: '.$desctiprtion.
+'.<br> Предлагает цену: '.$price ;
 $mail->AltBody = '';
 
 if(!$mail->send()) {
