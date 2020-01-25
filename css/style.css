@@ -144,7 +144,9 @@ img {
 }
 
 @media (max-width: 991px) {
-  display: block;
+  .button {
+    display: block;
+  }
 }
 
 @media (max-width: 576px) {
