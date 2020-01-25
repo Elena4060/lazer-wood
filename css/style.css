@@ -84,6 +84,7 @@ img {
   color: #9D8368;
   text-transform: uppercase;
   background-color: #fff;
+  text-decoration: none;
 }
 
 .button {
@@ -356,14 +357,16 @@ img {
 
 @media (max-width: 991px) {
   .hero {
-    padding-top: 160px;
+    padding-top: 110px;
     background-size: cover;
   }
   .hero__title {
     font-size: 5vh;
+    padding-right: 10px;
   }
   .hero__subtitle {
     margin-top: 180px;
+    padding-right: 10px;
   }
 }
 
@@ -526,17 +529,20 @@ img {
   left: 15px;
   background-color: rgba(229, 217, 207, 0.9);
   border: 1px solid #442404;
-  font-size: 2,5vh;
+  font-size: 14px;
   color: #442404;
   padding: 10px;
-  text-transform: uppercase;
 }
 
 .catalog-block__buttons {
   position: absolute;
-  bottom: 15px;
+  bottom: 25px;
   right: 15px;
   cursor: pointer;
+}
+
+.catalog-block__buttons a {
+  font-size: 12px;
 }
 
 .catalog-block__image {
