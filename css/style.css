@@ -143,6 +143,10 @@ img {
   margin-right: 20px;
 }
 
+@media (max-width: 991px) {
+  display: block;
+}
+
 @media (max-width: 576px) {
   .button-o {
     font-size: 10px;
@@ -454,6 +458,9 @@ img {
   .form__policy {
     margin-top: 30px;
     margin-left: 30px;
+  }
+  .form__button {
+    font-size: 10px;
   }
 }
 
