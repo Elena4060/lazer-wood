@@ -154,11 +154,11 @@ img {
     font-size: 10px;
   }
   .section {
-    padding: 100px 0;
+    padding: 70px 0;
   }
   .section__title {
     font-size: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 }
 
@@ -363,7 +363,7 @@ img {
 
 @media (max-width: 991px) {
   .hero {
-    padding-top: 110px;
+    padding-top: 180px;
     background-size: cover;
   }
   .hero__title {
@@ -437,6 +437,9 @@ img {
 }
 
 @media (max-width: 768px) {
+  .offer {
+    padding: 0;
+  }
   .offer-block {
     padding: 40px;
   }
@@ -678,8 +681,6 @@ img {
   text-align: center;
   position: absolute;
   z-index: -1;
-  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
   left: 0;
   bottom: 0px;
   height: 120px;
@@ -712,7 +713,7 @@ img {
             justify-content: center;
   }
   .material-block__card {
-    margin: 20px;
+    margin: 10px;
   }
 }
 
@@ -721,7 +722,7 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin: 20px;
+    margin: 10px;
   }
 }
 
@@ -780,10 +781,12 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 0 10px;
 }
 
 .reviews-slider__item {
   text-align: center;
+  margin: 0 10px;
 }
 
 .reviews-slider__image {
@@ -819,6 +822,16 @@ img {
   border-top: 15px solid #fff;
 }
 
+@media (max-width: 768px) {
+  .reviews-slider {
+    display: block;
+    margin-top: 20px;
+  }
+  .reviews-slider__item {
+    margin-bottom: 20px;
+  }
+}
+
 .factory-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -841,13 +854,22 @@ img {
   margin: 20px 0;
 }
 
+@media (max-width: 768px) {
+  .factory-block__text {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-left: 20px;
+  }
+}
+
 .questions__title {
-  font-size: 4vh;
+  margin-left: 20px;
+  font-size: 20px;
   font-family: 'Proxima Nova Semibold', sans-serif;
 }
 
 .questions__link {
-  font-size: 3vh;
+  font-size: 17px;
   color: #9D8368;
 }
 
