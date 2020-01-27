@@ -10,6 +10,11 @@ $name = $_POST['name_user'];
 $phone = $_POST['phone_user'];
 $desctiprtion = $_POST['desctiprtion'];
 $price = $_POST['price_user'];
+// $check = '';
+// if (!empty($_POST["checkbox"]) && is_array($_POST["checkbox"]))
+// {
+//     $check = implode(" ", $_POST["checkbox"]);
+// };
 
 
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
@@ -32,10 +37,10 @@ $mail->addAddress('lazer.wooden@gmail.com');     // РљРѕРјСѓ Р±СѓРґРµС‚ СѓС…РѕРґ
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'Р—Р°СЏРІРєР° СЃ СЃР°Р№С‚Р° Laser&Wooden';
-$mail->Body    = '' .$name . ' РѕСЃС‚Р°РІРёР» Р·Р°СЏРІРєСѓ.<br> Р•РіРѕ РЅРѕРјРµСЂ С‚РµР»РµС„РѕРЅР°: ' .$phone. 
-'<br> РњР°С‚РµСЂРёР°Р»: ' .$material. '.<br> РЈСЃР»СѓРіР°: ' .$typeorder. '.<br> РћРїРёСЃР°РЅРёРµ: '.$desctiprtion.
-'.<br> РџСЂРµРґР»Р°РіР°РµС‚ С†РµРЅСѓ: '.$price ;
+$mail->Subject = 'Заявка с сайта Laser&Wooden';
+$mail->Body    = '' .$name . ' оставил заявку.<br> Его номер телефона: ' .$phone. 
+'Материал: ' .$material. '.<br> Услуга: ' .$typeorder. '.<br> Описани: '.$desctiprtion.
+'.<br> Предлагает цену: '.$price. 'Дополнительно хочет:' ;
 $mail->AltBody = '';
 
 if(!$mail->send()) {
